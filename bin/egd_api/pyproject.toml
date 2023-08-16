@@ -1,0 +1,19 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "egd-api"
+version = "0.1.0"
+description = "European Go Database API"
+authors = ["Oleksandr Hiliazov <oleksandr.hiliazov@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+alembic = "^1.11.2"
+fastapi = { extras = ["all"], version = "^0.101.1" }
+passlib = { extras = ["bcrypt"], version = "^1.7.4" }
+python = "^3.11"
+python-jose = { extras = ["cryptography"], version = "^3.3.0" }
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.20"}
+pandas = "^2.0.3"

@@ -1,0 +1,11 @@
+# backend
+.idea/
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# web
+.next/
+next-env.d.ts
+node_modules/
